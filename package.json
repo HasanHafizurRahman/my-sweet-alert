@@ -10,13 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/HasanHafizurRahman/my-sweet-alert.git"
   },
-  "keywords": [
-    "[\"alert\"",
-    "sweet-alert\"",
-    "notification\"]"
-  ],
+  "keywords": ["alert", "sweet-alert", "notification"],
   "author": "Hasan Hafizur Rahman",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/HasanHafizurRahman/my-sweet-alert/issues"
   },
