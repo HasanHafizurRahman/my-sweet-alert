@@ -1,6 +1,6 @@
 {
   "name": "my-sweet-alert",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "A simple and customizable toast notification library for JavaScript",
   "main": "dist/toast.min.js",
   "scripts": {
