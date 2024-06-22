@@ -1,0 +1,24 @@
+{
+  "name": "my-sweet-alert",
+  "version": "1.0.0",
+  "description": "A simple sweet alert package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test spectified\\ && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HasanHafizurRahman/my-sweet-alert.git"
+  },
+  "keywords": [
+    "[\"alert\"",
+    "sweet-alert\"",
+    "notification\"]"
+  ],
+  "author": "Hasan Hafizur Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HasanHafizurRahman/my-sweet-alert/issues"
+  },
+  "homepage": "https://github.com/HasanHafizurRahman/my-sweet-alert#readme"
+}
