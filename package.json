@@ -1,28 +1,30 @@
 {
   "name": "my-sweet-alert",
-  "version": "1.0.2",
-  "description": "A simple sweet alert package",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "A simple and customizable toast notification library for JavaScript",
+  "main": "dist/toast.min.js",
   "scripts": {
-    "test": "echo \\\"Error: no test spectified\\ && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HasanHafizurRahman/my-sweet-alert.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [
-    "alert",
-    "sweet-alert",
-    "notification"
+    "toast",
+    "notification",
+    "javascript",
+    "vanilla-js",
+    "react",
+    "vue"
   ],
   "author": "Hasan Hafizur Rahman",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/HasanHafizurRahman/my-sweet-alert/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HasanHafizurRahman/my-sweet-alert"
   },
-  "homepage": "https://github.com/HasanHafizurRahman/my-sweet-alert#readme",
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   }
 }

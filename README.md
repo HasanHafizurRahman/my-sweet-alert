@@ -1,84 +1,100 @@
+README.md
+markdown
+Copy code
+
 # my-sweet-alert
 
-A simple sweet alert package for React.
+A simple and customizable toast notification library for JavaScript. This library can be easily integrated into vanilla JavaScript projects and can also be used with React and Vue.
+
+## Features
+
+- Lightweight and simple to use
+- Customizable toast messages
+- Automatic dismissal after a specified duration
+- Works with vanilla JavaScript, React, and Vue
 
 ## Installation
 
-Install the package via npm:
+You can install the library using npm:
 
-```sh
+```bash
 npm install my-sweet-alert
-
-Ensure you have react and react-dom installed in your project:
-npm install react react-dom
-
-
 Usage
-To use the SweetAlert component in your React project, follow these steps:
+Vanilla JavaScript
+Include the CSS file in your HTML:
+html
+Copy code
+<link rel="stylesheet" href="path/to/toast.min.css">
+Include the JS file in your HTML:
+html
+Copy code
+<script src="path/to/toast.min.js"></script>
+Use the library in your JavaScript code:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Message Example</title>
+    <link rel="stylesheet" href="../src/toast.css">
+</head>
+<body>
+    <button id="show-toast">Show Toast</button>
+    <script src="../dist/toast.min.js"></script>
+    <script>
+        const toast = toastMessage.default;
 
-Import the SweetAlert component.
-Use the SweetAlert component in your React component.
-Here’s an example:
-import React, { useState } from 'react';
-import SweetAlert from 'my-sweet-alert';
+        document.getElementById('show-toast').addEventListener('click', () => {
+            toast.show('This is a toast message!');
+        });
+    </script>
+</body>
+</html>
+React
+Import the library in your React component:
+javascript
+Copy code
+import toast from 'my-sweet-alert';
 
 function App() {
-  const [showAlert, setShowAlert] = useState(false);
+    const showToast = () => {
+        toast.show('This is a toast message!');
+    };
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={() => setShowAlert(true)}>Show Alert</button>
-        {showAlert && (
-          <SweetAlert
-            message="Hello, world!"
-            onClose={() => setShowAlert(false)}
-          />
-        )}
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <button onClick={showToast}>Show Toast</button>
+        </div>
+    );
 }
 
 export default App;
+Vue
+Import the library in your Vue component:
+javascript
+Copy code
+import toast from 'my-sweet-alert';
 
-
-Props
-The SweetAlert component accepts the following props:
-
-message (string, required): The message to display in the alert.
-onClose (function, required): The function to call when the alert is closed.
-Example
-Below is a more detailed example of how to use the SweetAlert component within a React application:
-
-import React, { useState } from 'react';
-import SweetAlert from 'my-sweet-alert';
-
-function Example() {
-  const [showAlert, setShowAlert] = useState(false);
-
-  const handleShowAlert = () => {
-    setShowAlert(true);
-  };
-
-  const handleCloseAlert = () => {
-    setShowAlert(false);
-  };
-
-  return (
+export default {
+    methods: {
+        showToast() {
+            toast.show('This is a toast message!');
+        }
+    }
+};
+Use the method in your template:
+html
+Copy code
+<template>
     <div>
-      <button onClick={handleShowAlert}>Show Alert</button>
-      {showAlert && (
-        <SweetAlert
-          message="This is a sweet alert!"
-          onClose={handleCloseAlert}
-        />
-      )}
+        <button @click="showToast">Show Toast</button>
     </div>
-  );
-}
+</template>
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-export default Example;
-
-Contributing
-Feel free to open issues or submit pull requests for improvements or new features.
+Author
+Hasan Hafizur Rahman
+```
