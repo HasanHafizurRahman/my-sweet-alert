@@ -10,11 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/HasanHafizurRahman/my-sweet-alert.git"
   },
-  "keywords": ["alert", "sweet-alert", "notification"],
+  "keywords": [
+    "alert",
+    "sweet-alert",
+    "notification"
+  ],
   "author": "Hasan Hafizur Rahman",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HasanHafizurRahman/my-sweet-alert/issues"
   },
-  "homepage": "https://github.com/HasanHafizurRahman/my-sweet-alert#readme"
+  "homepage": "https://github.com/HasanHafizurRahman/my-sweet-alert#readme",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  }
 }
