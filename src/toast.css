@@ -6,15 +6,39 @@
 }
 
 .toast {
-  background-color: #333;
-  color: #fff;
   padding: 10px 20px;
   margin-bottom: 10px;
   border-radius: 5px;
   opacity: 1;
   transition: opacity 0.5s ease;
+  color: #fff;
 }
 
 .toast.fade-out {
   opacity: 0;
+}
+
+/* Default toast style */
+.toast-default {
+  background-color: #333;
+}
+
+/* Success toast style */
+.toast-success {
+  background-color: #28a745;
+}
+
+/* Error toast style */
+.toast-error {
+  background-color: #dc3545;
+}
+
+/* Info toast style */
+.toast-info {
+  background-color: #007bff;
+}
+
+/* Warning toast style */
+.toast-warning {
+  background-color: #ffc107;
 }

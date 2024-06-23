@@ -9,9 +9,9 @@ class Toast {
     document.body.appendChild(this.toastContainer);
   }
 
-  show(message, duration = 3000) {
+  show(message, { type = "default", duration = 3000 } = {}) {
     const toast = document.createElement("div");
-    toast.className = "toast";
+    toast.className = `toast toast-${type}`;
     toast.innerText = message;
     this.toastContainer.appendChild(toast);
 
